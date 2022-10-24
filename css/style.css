@@ -1,0 +1,41 @@
+:root {
+    --background-body: black;
+    --body-text: white;
+    --num-col: 10;
+    --basic-box: blue;
+    --fizz: green;
+    --buzz: yellow;
+    --fizzbuzz: red;
+}
+
+body {
+    background-color: var(--background-body);
+    color: var(--body-text);
+}
+
+.fa-solid {
+    cursor: pointer;
+}
+
+.box {
+    width: calc(100% / var( --num-col ) - 0.5rem);
+    margin-bottom: 0.5rem;
+    aspect-ratio: 1 / 1;
+    background-color: var(--basic-box);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box--fizz {
+    background-color: var(--fizz);
+}
+
+.box--buzz {
+    background-color: var(--buzz);
+}
+
+.box--fizzbuzz {
+    background-color: var(--fizzbuzz);
+}
